@@ -1,5 +1,8 @@
 package com.mascreen.learn_spring_framework.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Pacman implements GamingConsole {
 
     @Override

@@ -1,8 +1,14 @@
 package com.mascreen.learn_spring_framework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 /**
  * MarioGame
  */
+
+@Component
+@Qualifier("MarioGameQualifier") // to override the primary annotated component, we use @Qualifier
 public class MarioGame implements GamingConsole {
 
     public void up() {
