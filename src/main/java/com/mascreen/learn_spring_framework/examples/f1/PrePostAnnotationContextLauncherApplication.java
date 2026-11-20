@@ -35,7 +35,7 @@ class SomeClass {
         someDependency.getReady();
     }
 
-    @PreDestroy // used to clean up a bean before it is removed from the application ctx.
+    @PreDestroy // used to clean up a bean before it is removed from the application ctx
     public void cleanUp() {
         System.out.println("Cleanup");
     }
